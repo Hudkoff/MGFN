@@ -1,0 +1,27 @@
+@import "../css/base.less";
+
+
+.b-sidemenu {
+	float: right;
+	.clearfix();
+	width: 233px;
+	@media @edge {
+		width: 263px;
+	}
+}
+
+.b-sidemenu__header {
+	&:after {
+		display: none;
+	}
+	font-size: 24px;
+	padding: 25px 20px;
+}
+
+.b-sidemenu-submenu {
+	display: block;
+}
+.b-sidemenu-submenu__link {
+	font-size: 15px;
+	padding: 27px 20px;
+}

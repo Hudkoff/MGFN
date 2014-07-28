@@ -1,0 +1,10 @@
+@charset "utf-8";
+.body__wrapper {
+  min-width: 1420px;
+}
+.no-shadow {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  -o-box-shadow: none;
+}

@@ -1,0 +1,93 @@
+@import "../css/base.less";
+
+.b-header {
+	padding-top: 40px;
+	height: 68px;
+}
+.b-header__content {
+	width: 94%;
+	margin: 0 3%;
+	@media @edge {
+		margin: 0 auto;
+		max-width: 1420px;
+	}
+}
+.menu_opened .b-header__content {
+	transition: none;
+	-webkit-transition: none;
+	-moz-transition: none;
+	left: 0;
+	right: 0;
+}
+.menu_float .b-header{
+	height: 68px;
+	.b-header__content {
+		position: fixed;
+		top: 0;
+		max-width: none;
+		width: 100%;
+		margin: 0;
+	}
+}
+
+.b-header__margins {
+	display: table;
+	width: 100%;
+	.clearfix();
+}
+.menu_float .b-header__margins {
+	min-width: 1420px;
+	@media @edge {
+		width: 94%;
+		max-width: 1420px;
+		margin: 0 auto;
+	}
+}
+
+.b-header-row {
+	margin: 0 0 19px;
+	@media @mobile{
+		margin: 0;
+	}
+}
+
+.b-header__logo {
+	background-image: url(i/logo-1024.png);
+	margin: 16px 0 0 20px;
+	width: 172px;
+	height: 36px;
+}
+
+.b-header__button {
+
+	height: 68px;
+	width: 81px;
+}
+
+.b-button_menu {
+	display: none;
+}
+.menu_opened .b-button_menu {
+	background: #4d2d84 url(i/icon-menu-opened.png) no-repeat center;
+	background-image: url(i/icon-menu-opened-1024.png);
+}
+.menu_float .b-button_menu {
+	display: block;
+}
+
+
+.b-button_login {
+	display: block;
+	background: url(i/icon-login-768.png) no-repeat center;
+}
+.b-button_shop {
+	display: block;
+	background: url(i/icon-shop-768.png) no-repeat center;
+}
+.b-button_search {
+	display: block;
+	background: url(i/icon-search-768.png) no-repeat center;
+	background-image: url(i/icon-search-1024.png);
+}
+
+

@@ -1,0 +1,59 @@
+@import "../css/base.less";
+
+
+.b-socials {
+	float: none;
+	margin: -13px 0 58px;
+	@media @edge {
+		margin: -13px 0 68px;
+	}
+}
+
+.b-socials-item {
+	&.b-socials-item__last {
+		margin-right: 14px;
+	}
+	margin: 0 20px 0 0;
+	@media @edge {
+		margin: 0 27px 0 0;
+	}
+}
+
+.icoSizes(@value) {
+	background-repeat: no-repeat;
+	display: block;
+	.size(@size) {
+		width: @size;
+		height: @size;
+		background-position: -@size*@value 0;
+		&:hover {
+			background-position: -@size*@value -@size;
+		}
+	}
+	background-image: url(i/socials-1366.png);
+	.size(46px);
+	@media @edge {
+		background-image: url(i/socials-1508.png);
+		.size(52px);
+	}
+}
+
+.b-socials-ico__twitter {
+	.icoSizes(0);
+}
+
+.b-socials-ico__facebook {
+	.icoSizes(1);
+}
+
+.b-socials-ico__pinterest {
+	.icoSizes(2);
+}
+
+.b-socials-ico__tumblr {
+	.icoSizes(3);
+}
+
+.b-socials-ico__odnoklassniki {
+	.icoSizes(4);
+}

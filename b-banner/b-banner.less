@@ -1,0 +1,266 @@
+@import "../css/base.less";
+
+.b-banner-viewport {
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+	font-size: 0;
+	height: 518px;
+	position: absolute;
+	width: 100%;
+	z-index: -1;
+	@media @tablet {
+		height: 493px;
+	}
+	@media @desktop {
+		height: 570px;
+	}
+	@media  @wide {
+		height: 730px;
+	}
+	@media @edge {
+		height: 730px;
+	}
+}
+
+.b-banner-controls {
+	position: relative;
+//	height: 200px;
+//	@media @tablet {
+//		height: 323px;
+//	}
+//	@media @desktop {
+//		height: 330px;
+//	}
+//	@media @wide {
+//		height: 538px;
+//	}
+//	@media @edge {
+//		height: 566px;
+//	}
+}
+
+.b-banners-slider__next,
+.b-banners-slider__prev {
+	display: block;
+	position: absolute;
+	z-index: 99;
+
+	font: 0/0 serif;
+	color: transparent;
+
+	width: 26px;
+	height: 26px;
+	bottom: 9px;
+	@media @tablet {
+		bottom: 46%;
+	}
+	@media @desktop {
+		width: 31px;
+		height: 31px;
+	}
+	@media @wide {
+		width: 42px;
+		height: 42px;
+		bottom: 49%;
+	}
+	@media @edge {
+		width: 66px;
+		height: 66px;
+	}
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.b-banners-slider__next {
+	background: url(i/btn-next-320.png) no-repeat center;
+	right: 11px;
+	@media @desktop {
+		background: url(i/btn-next-1024.png) no-repeat center;
+		right: 12px;
+	}
+	@media @wide {
+		background: url(i/btn-next-1366.png) no-repeat center;
+		right: 21px;
+	}
+	@media @edge {
+		background: url(i/btn-next-1508.png) no-repeat center;
+		right: 77px;
+	}
+}
+
+.b-banners-slider__prev {
+	background: url(i/btn-prev-320.png) no-repeat center;
+	left: 11px;
+	@media @desktop {
+		background: url(i/btn-prev-1024.png) no-repeat center;
+		left: 12px;
+	}
+	@media @wide {
+		background: url(i/btn-prev-1366.png) no-repeat center;
+		left: 21px;
+	}
+	@media @edge {
+		background: url(i/btn-prev-1508.png) no-repeat center;
+		left: 77px;
+	}
+}
+
+.b-banner__markers {
+	position: absolute;
+	bottom: 14px;
+	width: 100%;
+	text-align: center;
+	font-size: 0;
+	z-index: 99;
+	@media @tablet {
+		bottom: 51px;
+	}
+	@media @desktop {
+		bottom: 21px;
+	}
+	@media @edge {
+		bottom: 26px;
+	}
+}
+
+.b-banner__marker {
+	display: inline-block;
+	border-radius: 50%;
+	cursor: pointer;
+	background: url(i/sprite-marker-320.png) no-repeat 0 0;
+	width: 9px;
+	height: 9px;
+	margin-left: 7px;
+	&:first-child {
+		margin-left: 0;
+	}
+	&:hover {
+		background: url(i/sprite-marker-320.png) no-repeat -9px 0;
+		opacity: .7;
+	}
+	@media @tablet {
+		background: url(i/sprite-marker-768.png) no-repeat 0 0;
+		width: 13px;
+		height: 13px;
+		margin-left: 8px;
+		&:hover {
+			background: url(i/sprite-marker-768.png) no-repeat -13px 0;
+		}
+	}
+	@media @desktop {
+		background: url(i/sprite-marker-1024.png) no-repeat 0 0;
+		width: 17px;
+		height: 17px;
+		margin-left: 12px;
+		&:hover {
+			background: url(i/sprite-marker-1024.png) no-repeat -17px 0;
+		}
+	}
+	@media @wide {
+		background: url(i/sprite-marker-1366.png) no-repeat 0 0;
+		width: 22px;
+		height: 22px;
+		margin-left: 17px;
+		&:hover {
+			background: url(i/sprite-marker-1366.png) no-repeat -22px 0;
+		}
+	}
+}
+
+.b-banner__marker_active {
+	background: url(i/sprite-marker-320.png) no-repeat -9px 0;
+	@media @tablet {
+		background: url(i/sprite-marker-768.png) no-repeat -13px 0;
+	}
+	@media @desktop {
+		background: url(i/sprite-marker-1024.png) no-repeat -17px 0;
+	}
+	@media @wide {
+		background: url(i/sprite-marker-1366.png) no-repeat -22px 0;
+	}
+}
+
+.b-banner__item {
+	display: block;
+	z-index: 1;
+	opacity: 0;
+	width: 100%;
+	position: absolute;
+	padding-top: 50px;
+	@media @tablet {
+		padding-top: 60px;
+	}
+	@media @desktop {
+	}
+	@media @wide {
+		padding-top: 0;
+	}
+	@media @edge {
+		left: 50%;
+		width: 1920px;
+		margin-left: -960px;
+
+	}
+
+}
+
+.b-banner__item_active {
+	z-index: 2;
+	opacity: 1;
+}
+
+.b-banner__image {
+	height: auto;
+	width: 100%;
+}
+
+.b-banner__image_size-mobile {
+	display: inline-block;
+	@media @tablet {
+		display: none;
+	}
+}
+
+.b-banner__image_size-tablet {
+	display: none;
+	@media @tablet {
+		display: inline-block;
+	}
+	@media @desktop {
+		display: none;
+	}
+}
+
+.b-banner__image_size-desktop {
+	display: none;
+	@media @desktop {
+		display: inline-block;
+	}
+	@media @wide {
+		display: none;
+	}
+}
+
+.b-banner__image_size-wide {
+	display: none;
+	@media @wide {
+		display: inline-block;
+	}
+	@media @edge {
+		display: none;
+	}
+}
+
+.b-banner__image_size-edge {
+	display: none;
+	@media @edge {
+		display: inline-block;
+	}
+}
+
+.b_banners-slider_active {
+	z-index: 10;
+	opacity: 1;
+}

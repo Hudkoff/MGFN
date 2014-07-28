@@ -1,0 +1,230 @@
+@import "../css/base.less";
+
+.b-main {
+	margin-right: 233px;
+	padding: 0 2%;
+	@media @edge {
+		margin-right: 263px;
+	}
+}
+
+.b-bricks-wrapper {
+	width: 101%;
+	margin-left: -1%;
+}
+
+.b-brick {
+	height: 200px;
+	width: 19%;
+	margin: 0 0 13px 1%;
+	&:first-child {
+		width: 19%;
+	}
+	@media @edge {
+		height: 225px;
+	}
+}
+.b-bricks-wrapper_top .b-brick {
+	height: 289px;
+	@media @edge {
+		height: 317px;
+	}
+}
+.b-bricks-wrapper-3 {
+	float: left;
+	width: 40%;
+}
+.b-bricks-wrapper-3 .b-brick {
+	width: 48%;
+	margin: 0 0 13px 2%;
+	height: 200px;
+	&:first-child {
+		margin: 0 0 13px 2%;
+		width: 98%;
+		height: 76px;
+	}
+	@media @edge {
+		height: 224px;
+		&:first-child {
+			height: 80px;
+		}
+	}
+}
+
+.b-brick_view_mobile-double {
+	height: 200px;
+	width: 19%;
+	@media @edge {
+		height: 225px;
+	}
+}
+
+
+
+
+
+
+
+
+.b-brick:hover .b-brick__bg {
+	@media @edge {
+		width: 243px;
+		height: 243px;
+	}
+}
+
+.b-bricks-wrapper-3 {
+	.b-brick__link {
+		background: #FFFFFF url(i/ico-arrow-768.png) no-repeat 90% 80%;
+		background-position: 89% 82%;
+		.b-brick__bg {
+			left: 75px;
+			top: 75px;
+		}
+	}
+}
+.b-bricks-wrapper-3 .b-brick:first-child {
+	.b-brick__link {
+		background-position: 94.8% 53%;
+	}
+}
+
+
+
+
+.b-brick__title {
+	font-size: 19px;
+	line-height: 1.2em;
+	margin: 14px;
+	@media @edge {
+		font-size: 21px;
+	}
+}
+
+.b-brick__description {
+	line-height: 1.2em;
+	position: absolute;
+	bottom: 0;
+	margin: 21px 14px 18px;
+	@media @wide {
+		position: relative;
+	}
+	@media @edge {
+		font-size: 16px;
+	}
+}
+
+
+
+
+
+
+
+.b-main__title {
+	color: #333333;
+	.DinDisplay();
+	font-size: 24px;
+	margin: 28px 1% 17px;
+	@media @edge {
+		margin: 35px 0 28px;
+	}
+}
+.b-main__title-link {
+	margin-top: 7px;
+	font-size: 17px;
+}
+
+
+.b-brick__icon {
+	width: 72px;
+	height: 72px;
+	bottom: 14px;
+	right: 14px;
+	background: url(i/border-ring-768.png) no-repeat center;
+	@media @edge {
+		background: url(i/border-ring-1508.png) no-repeat center;
+		width: 82px;
+		height: 82px;
+	}
+}
+
+.icon_solution {
+	&:before {
+		background: url(i/ico-solution-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-solution-1508.png) no-repeat center;
+		}
+	}
+}
+
+.icon_connect {
+	&:before {
+		background: url(i/ico-connect-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-connect-1508.png) no-repeat center;
+
+		}
+	}
+}
+
+.icon_internet {
+	&:before {
+		background: url(i/ico-internet-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-internet-1508.png) no-repeat center;
+
+		}
+	}
+}
+
+.icon_manage {
+	&:before {
+		background: url(i/ico-manage-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-manage-1508.png) no-repeat center;
+		}
+	}
+}
+
+.icon_office {
+	&:before {
+		background: url(i/ico-office-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-office-1508.png) no-repeat center;
+
+		}
+	}
+}
+
+.icon_phone {
+	&:before {
+		background: url(i/ico-phone-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-phone-1508.png) no-repeat center;
+
+		}
+	}
+}
+
+.icon_save-number {
+	&:before {
+		background: url(i/ico-save-number-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-save-number-1508.png) no-repeat center;
+
+		}
+	}
+}
+
+.icon_secure {
+	&:before {
+		background: url(i/ico-secure-768.png) no-repeat center;
+		@media @edge {
+			background: url(i/ico-secure-1508.png) no-repeat center;
+
+		}
+	}
+}
+
+
+

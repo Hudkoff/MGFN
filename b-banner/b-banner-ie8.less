@@ -1,0 +1,100 @@
+@import "../css/base.less";
+
+
+.b-banner-viewport {
+	height: 1000px;
+	@media @edge {
+		height: 730px;
+	}
+}
+
+.b-banner-controls {
+	position: relative;
+}
+
+.b-banners-slider__next,
+.b-banners-slider__prev {
+	width: 42px;
+	height: 42px;
+	bottom: 49%;
+	@media @edge {
+		width: 66px;
+		height: 66px;
+	}
+}
+
+.b-banners-slider__next {
+	background: url(i/btn-next-1366.png) no-repeat center;
+	right: 21px;
+	@media @edge {
+		background: url(i/btn-next-1508.png) no-repeat center;
+		right: 77px;
+	}
+}
+
+.b-banners-slider__prev {
+	background: url(i/btn-prev-1366.png) no-repeat center;
+	left: 21px;
+	@media @edge {
+		background: url(i/btn-prev-1508.png) no-repeat center;
+		left: 77px;
+	}
+}
+
+.b-banner__markers {
+	bottom: 21px;
+	@media @edge {
+		bottom: 26px;
+	}
+}
+
+.b-banner__marker {
+	background: url(i/sprite-marker-1366.png) no-repeat 0 0;
+	width: 22px;
+	height: 22px;
+	margin-left: 17px;
+	&:hover {
+		background: url(i/sprite-marker-1366.png) no-repeat -22px 0;
+	}
+}
+
+.b-banner__marker_active {
+	background: url(i/sprite-marker-1366.png) no-repeat -22px 0;
+}
+
+.b-banner__item {
+	padding-top: 0;
+	@media @edge {
+		left: 50%;
+		width: 1920px;
+		margin-left: -960px;
+
+	}
+
+}
+
+.b-banner__image_size-mobile {
+	display: none;
+}
+
+.b-banner__image_size-tablet {
+	display: none;
+}
+
+.b-banner__image_size-desktop {
+	display: none;
+}
+
+.b-banner__image_size-wide {
+	display: inline-block;
+}
+
+.b-banner__image_size-edge {
+	display: none;
+}
+
+
+
+
+
+

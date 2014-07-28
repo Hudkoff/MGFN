@@ -1,0 +1,87 @@
+@import "../css/base.less";
+
+.b-sidemenu {
+	.DinDisplay();
+	@media @tablet {
+		float: right;
+		.clearfix();
+		width: 277px;
+	}
+	@media @desktop {
+		width: 308px;
+	}
+	@media @wide {
+		width: 233px;
+	}
+	@media @edge {
+		width: 263px;
+	}
+}
+
+.b-sidemenu__header {
+	display: block;
+	color: #FFFFFF;
+	font-size: 20px;
+	padding: 21px 5%;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	&:after {
+		display: inline-block;
+		content: "";
+		float: right;
+		background: url(i/arrow-down.png) no-repeat center;
+		width: 16px;
+		height: 20px;
+		@media @tablet {
+			display: none;
+		}
+	}
+	@media @tablet {
+		padding: 25px 20px;
+		font-size: 24px;
+	}
+	@media @desktop {
+		padding: 25px 30px;
+	}
+	@media @wide {
+		padding: 25px 20px;
+	}
+}
+.acc-state_active .b-sidemenu__header {
+	&:after {
+		background-image: url(i/arrow-up.png);
+	}
+}
+
+.b-sidemenu-submenu {
+	display: none;
+	@media @tablet {
+		display: block;
+	}
+}
+.b-sidemenu-submenu__item {
+	border-top: 1px solid #816DA2;
+
+}
+.b-sidemenu-submenu__link {
+	display: block;
+	color: #FFFFFF;
+	padding: 27px 5%;
+	font-size: 16px;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+	@media @tablet {
+		font-size: 15px;
+		padding: 27px 20px;
+	}
+	@media @desktop {
+		padding: 27px 30px;
+	}
+	@media @wide {
+		padding: 27px 20px;
+	}
+}

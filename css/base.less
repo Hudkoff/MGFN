@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import "vendor";
+
+//* --- colors --- *// 
+@lightGray: #E6E6E6; // page background
+@grayButton: #F2F2F2;
+@midGray: #ddd;
+@gray: #666666;
+@darkGray: #4A4B4D;
+@green: #31BA63;
+@purple: #8456D6;
+@white: #FFFFFF;
+@black: #000000;
+
+@MEG_GREEN: #24B76D;
+@MEG_PURPLE: #482670;
+@MEG_PURPLE-ACTIVE: #3C1F5C;
+@MEG_BLUE: #008BFB;
+@MEG_BLACK100: #231F20;
+@MEG_BLACK90: #1A1A1A;
+@MEG_BLACK80: #333333;
+@MEG_BLACK40: #999999;
+@MEG_BLACK20: #CCCCCC;
+//* --- colors --- *//
+
+
+//* --- breakpoints --- *//
+@mobile: ~"screen and (max-width: 1023px)"; // NOT USED
+
+@tablet: ~"screen and (min-width: 768px)";
+@desktop: ~"screen and (min-width: 1024px)";
+@wide: ~"screen and (min-width: 1366px)";
+@edge: ~"screen and (min-width: 1508px)";
+
+//* --- breakpoints --- *//
+
+//* --- typography --- *//
+.DinDisplay() {
+	font-family: "DinDisplay Pro", Arial, sans-serif;
+	font-weight: normal;
+}
+
+.DinDisplay-Medium() {
+	font-family: "DinDisplay Pro Medium", Arial, sans-serif;
+	font-weight: normal;
+}
+
+.DinDisplay-Light() {
+	font-family: "DinDisplay Pro Light", Arial, sans-serif;
+	font-weight: normal;
+}
+
+.DinDisplay-Bold() {
+	font-family: "DinDisplay Pro Bold", Arial, sans-serif;
+	font-weight: normal;
+}
+
+//* --- typography --- *//
+
+//* --- general mixins --- *//
+.clearfix() {
+	&:after {
+		display: block;
+		height: 0;
+		clear: both;
+		content: "";
+		visibility: hidden;
+	}
+}
+
+//* --- mixins --- *//
+
+

@@ -1,0 +1,112 @@
+@charset "utf-8";
+.b-sidemenu {
+  font-family: "DinDisplay Pro", Arial, sans-serif;
+  font-weight: normal;
+}
+@media screen and (min-width: 768px) {
+  .b-sidemenu {
+    float: right;
+    width: 277px;
+  }
+  .b-sidemenu:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: "";
+    visibility: hidden;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-sidemenu {
+    width: 308px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-sidemenu {
+    width: 233px;
+  }
+}
+@media screen and (min-width: 1508px) {
+  .b-sidemenu {
+    width: 263px;
+  }
+}
+.b-sidemenu__header {
+  display: block;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 21px 5%;
+  text-decoration: none;
+}
+.b-sidemenu__header:hover {
+  text-decoration: underline;
+}
+.b-sidemenu__header:after {
+  display: inline-block;
+  content: "";
+  float: right;
+  background: url(i/arrow-down.png) no-repeat center;
+  width: 16px;
+  height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .b-sidemenu__header:after {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .b-sidemenu__header {
+    padding: 25px 20px;
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-sidemenu__header {
+    padding: 25px 30px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-sidemenu__header {
+    padding: 25px 20px;
+  }
+}
+.acc-state_active .b-sidemenu__header:after {
+  background-image: url(i/arrow-up.png);
+}
+.b-sidemenu-submenu {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .b-sidemenu-submenu {
+    display: block;
+  }
+}
+.b-sidemenu-submenu__item {
+  border-top: 1px solid #816DA2;
+}
+.b-sidemenu-submenu__link {
+  display: block;
+  color: #FFFFFF;
+  padding: 27px 5%;
+  font-size: 16px;
+  text-decoration: none;
+}
+.b-sidemenu-submenu__link:hover {
+  text-decoration: underline;
+}
+@media screen and (min-width: 768px) {
+  .b-sidemenu-submenu__link {
+    font-size: 15px;
+    padding: 27px 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-sidemenu-submenu__link {
+    padding: 27px 30px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-sidemenu-submenu__link {
+    padding: 27px 20px;
+  }
+}

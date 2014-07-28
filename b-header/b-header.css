@@ -1,0 +1,233 @@
+@charset "utf-8";
+.b-header {
+  position: relative;
+  height: 50px;
+  z-index: 1000;
+}
+.b-header:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: "";
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .b-header {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-header {
+    padding-top: 40px;
+    height: 68px;
+  }
+}
+.b-header__content {
+  width: 100%;
+  min-width: 320px;
+  max-width: 1420px;
+  left: 0;
+  right: 0;
+}
+@media screen and (min-width: 1366px) {
+  .b-header__content {
+    width: 94%;
+    margin: 0 3%;
+  }
+}
+@media screen and (min-width: 1508px) {
+  .b-header__content {
+    margin: 0 auto;
+  }
+}
+.menu_opened .b-header__content {
+  left: -85%;
+  right: 85%;
+}
+@media screen and (min-width: 1366px) {
+  .menu_opened .b-header__content {
+    left: 0;
+    right: 0;
+  }
+}
+.menu_float .b-header {
+  height: 50px;
+}
+@media screen and (min-width: 768px) {
+  .menu_float .b-header {
+    height: 60px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .menu_float .b-header {
+    height: 68px;
+  }
+}
+.menu_float .b-header .b-header__content {
+  position: fixed;
+  top: 0;
+  max-width: none;
+  width: 100%;
+  margin: 0;
+}
+.b-header__margins {
+  background: #FFFFFF;
+}
+@media screen and (min-width: 1366px) {
+  .b-header__margins {
+    display: table;
+    width: 100%;
+  }
+}
+.b-header__margins:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: "";
+  visibility: hidden;
+}
+.menu_float .b-header__margins {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  -o-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1508px) {
+  .menu_float .b-header__margins {
+    width: 94%;
+    max-width: 1420px;
+    margin: 0 auto;
+  }
+}
+.b-header__logo {
+  background: url(i/logo-320.png) no-repeat center;
+  width: 110px;
+  height: 23px;
+  margin: 13px 0 0 10px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .b-header__logo {
+    background-image: url(i/logo-768.png);
+    width: 148px;
+    height: 31px;
+    margin: 14px 0 0 20px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-header__logo {
+    background-image: url(i/logo-1024.png);
+    width: 161px;
+    height: 34px;
+    margin: 12px 0 0 31px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-header__logo {
+    margin: 16px 0 0 20px;
+    width: 172px;
+    height: 36px;
+  }
+}
+.b-header__button {
+  display: block;
+  float: right;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+  margin: 0;
+  border-left: 1px solid #E5E5E5;
+}
+.b-header__button:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: "";
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .b-header__button {
+    height: 60px;
+    width: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-header__button {
+    width: 78px;
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-header__button {
+    height: 68px;
+    width: 81px;
+  }
+}
+.b-button_menu {
+  background: url(i/icon-menu.png) no-repeat center;
+}
+@media screen and (min-width: 768px) {
+  .b-button_menu {
+    background-image: url(i/icon-menu-768.png);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-button_menu {
+    background-image: url(i/icon-menu-1024.png);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .b-button_menu {
+    display: none;
+  }
+}
+.menu_opened .b-button_menu {
+  background: #4d2d84 url(i/icon-menu-opened.png) no-repeat center;
+}
+@media screen and (min-width: 768px) {
+  .menu_opened .b-button_menu {
+    background-image: url(i/icon-menu-opened-768.png);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .menu_opened .b-button_menu {
+    background-image: url(i/icon-menu-opened-1024.png);
+  }
+}
+@media screen and (min-width: 1366px) {
+  .menu_float .b-button_menu {
+    display: block;
+  }
+}
+.b-button_login {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .b-button_login {
+    display: block;
+    background: url(i/icon-login-768.png) no-repeat center;
+  }
+}
+.b-button_shop {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .b-button_shop {
+    display: block;
+    background: url(i/icon-shop-768.png) no-repeat center;
+  }
+}
+.b-button_search {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .b-button_search {
+    display: block;
+    background: url(i/icon-search-768.png) no-repeat center;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-button_search {
+    background-image: url(i/icon-search-1024.png);
+  }
+}

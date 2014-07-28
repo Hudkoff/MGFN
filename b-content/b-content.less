@@ -1,0 +1,661 @@
+@import "../css/base";
+
+
+.b-main {
+	padding: 13px 5% 0;
+	background: #e6e6e6;
+	@media @tablet {
+		margin-right: 277px;
+		padding: 0 3%;
+	}
+	@media @desktop {
+		margin-right: 308px;
+		padding: 0 3%;
+	}
+	@media @wide {
+		margin-right: 233px;
+		padding: 0 2%;
+	}
+	@media @edge {
+		margin-right: 263px;
+	}
+	.clearfix();
+}
+
+
+
+
+
+
+
+
+.b-bricks-wrapper {
+	width: 103%;
+	margin-left: -3%;
+	.clearfix();
+	@media @tablet {
+		top: 13px;
+		position: relative;
+	}
+	@media @desktop {
+		width: 102%;
+		margin-left: -2%;
+	}
+	@media @wide {
+		width: 101%;
+		margin-left: -1%;
+	}
+}
+
+.b-brick {
+	width: 47%;
+	margin: 0 0 10px 3%;
+	height: 100px;
+	float: left;
+	@media @tablet {
+		height: 170px;
+		margin: 0 0 13px 3%;
+	}
+	@media @desktop {
+		height: 200px;
+		width: 31%;
+		margin: 0 0 13px 2%;
+		&:first-child {
+			width: 64%;
+		}
+	}
+	@media @wide {
+		width: 19%;
+		margin: 0 0 13px 1%;
+		&:first-child {
+			width: 19%;
+		}
+	}
+	@media @edge {
+		height: 225px;
+	}
+	&:hover {
+		.box-shadow(0 0 25px rgba(0,0,0,.15))
+	}
+}
+.b-main__container {
+	float: left;
+	width: 100%;
+}
+.b-bricks-wrapper_top .b-brick {
+	@media @wide {
+		height: 289px;
+	}
+	@media @edge {
+		height: 317px;
+	}
+}
+.b-bricks-wrapper-3 {
+	@media @wide {
+		float: left;
+		width: 40%;
+	}
+}
+.b-bricks-wrapper-3 .b-brick {
+	width: 97%;
+	@media @tablet {
+		height: 131px;
+	}
+	@media @desktop {
+		width: 47.5%;
+		height: 150px;
+		&:first-child {
+			float: left;
+			width: 97%;
+			height: 77px;
+		}
+	}
+	@media @wide {
+		width: 48%;
+		margin: 0 0 13px 2%;
+		height: 200px;
+		&:first-child {
+			margin: 0 0 13px 2%;
+			width: 98%;
+			height: 76px;
+		}
+	}
+	@media @edge {
+		height: 224px;
+		&:first-child {
+			height: 80px;
+		}
+	}
+}
+
+.b-brick_view_mobile-double {
+	width: 97%;
+	@media @tablet {
+		height: 131px;
+	}
+	@media @desktop {
+		width: 31%;
+		height: 200px;
+	}
+	@media @wide {
+		width: 19%;
+	}
+	@media @edge {
+		height: 225px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.b-bricks-wrapper_top {
+	.b-brick {
+			.b-brick__bg {
+				@media @wide {
+					bottom: 220px;
+				}
+			}
+		&:hover {
+			.b-brick__bg {
+				@media @wide {
+					width: 400px;
+					height: 400px;
+					right: -34px;
+					bottom: 12px;
+				}
+			}
+		}
+	}
+}
+
+.b-brick {
+			.b-brick__bg {
+				display: none;
+				@media @desktop {
+					display: block;
+					background: #4C2F7B;
+					position: absolute;
+					width: 0;
+					height: 0;
+					-webkit-transition: .5s ease;
+					-moz-transition: .5s ease;
+					transition: .5s ease;
+					right: 147px;
+					bottom: 148px;
+					border-radius: 100%;
+				}
+			}
+		&:hover {
+			.b-brick__bg {
+				width: 282px;
+				height: 282px;
+				right: 7px;
+				bottom: 9px;
+			}
+		}
+
+	&:first-child {
+			.b-brick__bg {
+				right: 324px;
+				bottom: 144px;
+				@media @wide {
+					right: 147px;
+					bottom: 148px;
+				}
+			}
+		&:hover {
+			.b-brick__bg {
+				width: 580px;
+				height: 580px;
+				right: 34px;
+				bottom: -146px;
+				@media @wide {
+					width: 282px;
+					height: 282px;
+					right: 7px;
+					bottom: 9px;
+				}
+			}
+		}
+	}
+}
+
+
+
+.b-bricks-wrapper-3 {
+	.b-brick {
+				.b-brick__bg {
+					@media @desktop {
+						left: 85px;
+						top: 72px;
+					}
+					@media @wide {
+						left: -20px;
+						top: -200px;
+					}
+				}
+		&:hover {
+				.b-brick__bg {
+					width: 270px;
+					height: 270px;
+					left: -50px;
+					top: -62px;
+					@media @wide {
+						width: 450px;
+						height: 450px;
+						left: -146px;
+						top: -303px;
+					}
+					@media @edge {
+						top: -280px;
+					}
+
+				}
+		}
+		&:first-child {
+				.b-brick__bg {
+					top: 39px;
+				}
+			&:hover {
+				.b-brick__bg {
+					top: -95px;
+					width: 450px;
+					height: 450px;
+					top: -181px;
+					@media @wide {
+						top: -184px
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+.b-brick__link {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+	overflow: hidden;
+	position: relative;
+	text-decoration: none;
+}
+
+
+.b-bricks-wrapper-3 {
+	.b-brick__link {
+		background: #FFFFFF url(i/ico-arrow-320.png) no-repeat 93% 78%;
+		@media @tablet {
+			background: #FFFFFF url(i/ico-arrow-768.png) no-repeat 90% 80%;
+		}
+		@media @desktop {
+			background-position: 89% 82%;
+		}
+	}
+}
+.b-bricks-wrapper-3 .b-brick:first-child {
+	.b-brick__link {
+		@media @desktop {
+			background-position: 94.8% 53%;
+		}
+	}
+}
+
+
+
+
+.b-brick__title {
+	.DinDisplay();
+	font-size: 16px;
+	color: #333333;
+	display: block;
+	margin: 10px;
+	line-height: 1.1em;
+	position: relative;
+	@media @tablet {
+		font-size: 19px;
+		line-height: 1.2em;
+	}
+	@media @desktop {
+		margin: 14px;
+	}
+	@media @edge {
+		font-size: 21px;
+	}
+}
+
+.b-brick__description {
+	.DinDisplay-Light();
+	font-size: 14px;
+	color: #666666;
+	display: block;
+	line-height: 1.2em;
+	margin: 13px 10px 10px;
+	position: relative;
+	@media @tablet {
+		line-height: 1.2em;
+		margin: 21px 10px 10px;
+	}
+	@media @desktop {
+		position: absolute;
+		bottom: 0;
+		margin: 21px 14px 18px;
+	}
+	@media @wide {
+		position: relative;
+	}
+	@media @edge {
+		font-size: 16px;
+	}
+}
+.b-brick:hover .b-brick__description,
+.b-brick:hover .b-brick__title {
+	@media @desktop {
+		color: #ffffff;
+		-webkit-transition: .3s ease;
+		-moz-transition: .3s ease;
+		transition: .3s ease;
+	}
+}
+
+
+
+
+
+
+
+.b-main__title {
+	color: #333333;
+	.DinDisplay();
+	font-size: 20px;
+	margin: 15px 0 27px;
+	@media @tablet {
+		font-size: 24px;
+		margin: 28px 0 17px;
+	}
+	@media @desktop {
+		margin: 28px 1% 17px;
+	}
+	@media @edge {
+		margin: 35px 0 28px;
+	}
+}
+.b-main__title-link {
+	float: right;
+	color: #333333;
+	font-size: 15px;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding-right: 24px;
+	background: url(i/arrow-right-small-320.png) no-repeat right;
+	&:hover {
+		text-decoration: underline;
+	}
+	@media @tablet {
+		margin-top: 7px;
+	}
+	@media @wide {
+		font-size: 17px;
+	}}
+
+
+.b-brick__icon {
+	display: block;
+	position: absolute;
+	bottom: 6px;
+	right: 12px;
+	width: 52px;
+	height: 52px;
+	background: url(i/border-ring-320.png) no-repeat center;
+	&:before {
+		width: 100%;
+		height: 100%;
+		display: block;
+		content: '';
+		position: absolute;
+		z-index: 2;
+	}
+	@media @tablet {
+		width: 72px;
+		height: 72px;
+		bottom: 14px;
+		right: 14px;
+		background: url(i/border-ring-768.png) no-repeat center;
+	}
+	@media @desktop {
+		&:after {
+			background-color: #18A562;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			border-radius: 50%;
+			content: "";
+			-webkit-transition: .35s ease;
+			-moz-transition: .35s ease;
+			transition: .35s ease;
+			z-index: 1;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+	@media @edge {
+		background: url(i/border-ring-1508.png) no-repeat center;
+		width: 82px;
+		height: 82px;
+	}
+}
+.b-brick:hover .b-brick__icon {
+	@media @desktop {
+		&:before {
+			display: none;
+		}
+		&:after {
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+
+}
+
+.icon_solution {
+	&:before {
+		background: url(i/ico-solution-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-solution-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-solution-1508.png) no-repeat center;
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-solution-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-solution-1508-white.png);
+
+		}
+	}
+}
+
+.icon_connect {
+	&:before {
+		background: url(i/ico-connect-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-connect-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-connect-1508.png) no-repeat center;
+
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-connect-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-connect-1508-white.png);
+
+		}
+	}
+}
+
+.icon_internet {
+	&:before {
+		background: url(i/ico-internet-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-internet-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-internet-1508.png) no-repeat center;
+
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-internet-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-internet-1508-white.png);
+
+		}
+	}
+}
+
+.icon_manage {
+	&:before {
+		background: url(i/ico-manage-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-manage-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-manage-1508.png) no-repeat center;
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-manage-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-manage-1508-white.png);
+
+		}
+	}
+}
+
+.icon_office {
+	&:before {
+		background: url(i/ico-office-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-office-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-office-1508.png) no-repeat center;
+
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-office-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-office-1508-white.png);
+
+		}
+	}
+}
+
+.icon_phone {
+	&:before {
+		background: url(i/ico-phone-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-phone-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-phone-1508.png) no-repeat center;
+
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-phone-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-phone-1508-white.png);
+
+		}
+	}
+}
+
+.icon_save-number {
+	&:before {
+		background: url(i/ico-save-number-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-save-number-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-save-number-1508.png) no-repeat center;
+
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-save-number-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-save-number-1508-white.png);
+
+		}
+	}
+}
+
+.icon_secure {
+	&:before {
+		background: url(i/ico-secure-320.png) no-repeat center;
+		@media @tablet {
+			background: url(i/ico-secure-768.png) no-repeat center;
+		}
+		@media @edge {
+			background: url(i/ico-secure-1508.png) no-repeat center;
+
+		}
+	}
+	&:after {
+		@media @tablet {
+			background-image: url(i/ico-secure-768-white.png);
+		}
+		@media @edge {
+			background-image: url(i/ico-secure-1508-white.png);
+
+		}
+	}
+}
+
+

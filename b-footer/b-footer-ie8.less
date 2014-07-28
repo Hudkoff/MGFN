@@ -1,0 +1,124 @@
+@import "../css/base.less";
+
+
+.b-footer {
+	padding: 0 0 45px;
+}
+
+.b-footer-menu {
+	margin: 0 0 0 3%;
+}
+
+.b-footer-menu__item {
+	float: left;
+	padding-right: 10px;
+}
+
+.b-footer-menu__company,
+.b-footer-menu__organizations,
+.b-footer-menu__vacancy {
+	font-size: 24px;
+	padding: 0 0 30px;
+	border: 0;
+	@media @edge {
+		padding:  0 0 40px;
+	}
+
+	&:after {
+		background-image: none;
+		width: 7px;
+		margin-left: 10px;
+	}
+}
+
+.b-footer-menu__vacancy {
+	border-bottom: 0;
+	&:after {
+		background-image: url(i/arrow-right-dark-1366.png);
+		height: 26px;
+	}
+}
+
+.b-footer-menu__item.acc-state_active .b-footer-menu__company,
+.b-footer-menu__item.acc-state_active .b-footer-menu__organizations {
+	&:after {
+		display: none;
+	}
+}
+
+.b-footer-submenu-company,
+.b-footer-submenu-organizations {
+	display: inline-block;
+}
+
+.b-footer-submenu-company {
+	width: 215px;
+	@media @edge {
+		width: 230px;
+	}
+}
+
+.b-footer-submenu-company__link {
+	width: 200px;
+}
+
+.b-footer-submenu-organizations {
+	width: 310px;
+	@media @edge {
+		width: 346px;
+	}
+}
+
+.b-footer-submenu-organizations__link {
+	min-width: 124px;
+	@media @edge {
+		min-width: 138px;
+	}
+}
+
+.b-footer-submenu-company__item,
+.b-footer-submenu-organizations__item {
+	&:first-child {
+		.box-shadow(none);
+	}
+	&:last-child {
+		.box-shadow(none);
+	}
+}
+
+.b-footer-submenu-organizations__item {
+	float: left;
+}
+
+.b-footer-submenu-company__link,
+.b-footer-submenu-organizations__link {
+	padding: 0 0 20px;
+	font-size: 15px;
+	border: 0;
+	@media @edge {
+		font-size: 17px;
+		padding: 0 0 24px;
+	}
+
+}
+
+.b-footer-rightSection {
+	padding-left: 3%;
+	float: right;
+}
+
+.b-footer-copy {
+
+	float: left;
+	text-align: left;
+
+	font-size: 14px;
+	max-width: 300px;
+	margin: 0;
+	@media @edge {
+		font-size: 16px;
+		max-width: 379px;
+	}
+}
+
+

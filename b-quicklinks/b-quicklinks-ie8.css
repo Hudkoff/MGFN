@@ -1,0 +1,103 @@
+@charset "utf-8";
+.b-quicklinks {
+  display: table;
+  border: 0;
+  width: 98%;
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0 0 56px 2%;
+  padding-bottom: 42px;
+}
+.b-quicklinks__item {
+  border: 0;
+  display: table-cell;
+  border-left: 120px solid transparent;
+}
+.b-quicklinks__item:first-child {
+  border: 0;
+}
+.b-quicklinks__item .b-quicklinks__icon:after {
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  content: "";
+  -webkit-transition: .35s ease;
+  -moz-transition: .35s ease;
+  transition: .35s ease;
+  z-index: -1;
+}
+.b-quicklinks__item:hover .b-quicklinks__icon:after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.b-quicklinks__icon {
+  width: 60px;
+  height: 60px;
+  margin-top: -30px;
+  left: 0;
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__icon {
+    width: 66px;
+    height: 66px;
+    margin-top: -33px;
+  }
+}
+.b-quicklinks__item_offices .b-quicklinks__icon {
+  background-image: url(i/icon-offices-1366.png);
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__item_offices .b-quicklinks__icon {
+    background-image: url(i/icon-offices-1508.png);
+  }
+}
+.b-quicklinks__item_map .b-quicklinks__icon {
+  background-image: url(i/icon-map-1366.png);
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__item_map .b-quicklinks__icon {
+    background-image: url(i/icon-map-1508.png);
+  }
+}
+.b-quicklinks__item_docs .b-quicklinks__icon {
+  background-image: url(i/icon-docs-1366.png);
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__item_docs .b-quicklinks__icon {
+    background-image: url(i/icon-docs-1508.png);
+  }
+}
+.b-quicklinks__item_faq .b-quicklinks__icon {
+  background-image: url(i/icon-faq-1366.png);
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__item_faq .b-quicklinks__icon {
+    background-image: url(i/icon-faq-1508.png);
+  }
+}
+.b-quicklinks__item_contact .b-quicklinks__icon {
+  background-image: url(i/icon-contact-1366.png);
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__item_contact .b-quicklinks__icon {
+    background-image: url(i/icon-contact-1508.png);
+  }
+}
+.b-quicklinks__link {
+  padding: 20px 20px 20px 75px;
+  color: #333333;
+}
+.b-quicklinks__link:after {
+  display: none;
+}
+@media screen and (min-width: 1508px) {
+  .b-quicklinks__link {
+    padding: 20px 20px 20px 85px;
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,31 @@
+@charset "utf-8";
+.b-sidemenu {
+  float: right;
+  width: 233px;
+}
+.b-sidemenu:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: "";
+  visibility: hidden;
+}
+@media screen and (min-width: 1508px) {
+  .b-sidemenu {
+    width: 263px;
+  }
+}
+.b-sidemenu__header {
+  font-size: 24px;
+  padding: 25px 20px;
+}
+.b-sidemenu__header:after {
+  display: none;
+}
+.b-sidemenu-submenu {
+  display: block;
+}
+.b-sidemenu-submenu__link {
+  font-size: 15px;
+  padding: 27px 20px;
+}
